@@ -1,0 +1,215 @@
+2017-09-05 09:38:27,401 p=31270 u=mlynn |  ec2-52-90-53-234.compute-1.amazonaws.com | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-09-05 09:38:27,403 p=31270 u=mlynn |  ec2-52-73-134-204.compute-1.amazonaws.com | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-09-05 09:38:27,411 p=31270 u=mlynn |  ec2-34-229-177-112.compute-1.amazonaws.com | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2017-09-05 09:49:10,320 p=31755 u=mlynn |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 3, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: ReplicaSet
+ remote_user: root
+ ^ here
+
+2017-09-05 09:49:46,883 p=31779 u=mlynn |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 3, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: ReplicaSet
+   remote_user: root
+              ^ here
+
+2017-09-05 09:49:58,110 p=31789 u=mlynn |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 3, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- hosts: ReplicaSet
+   remote_user: ec2-user
+              ^ here
+
+2017-09-05 09:51:04,684 p=31885 u=mlynn |  ERROR! 'ping' is not a valid attribute for a Play
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: ReplicaSet
+  ^ here
+
+2017-09-05 09:52:38,569 p=31977 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 09:52:38,606 p=31977 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 09:52:39,672 p=31977 u=mlynn |  ok: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 09:52:39,697 p=31977 u=mlynn |  ok: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 09:52:39,722 p=31977 u=mlynn |  ok: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 09:52:39,725 p=31977 u=mlynn |  TASK [test connection] *********************************************************
+2017-09-05 09:52:40,273 p=31977 u=mlynn |  fatal: [ec2-34-229-177-112.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: remote_user"}
+2017-09-05 09:52:40,310 p=31977 u=mlynn |  fatal: [ec2-52-73-134-204.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: remote_user"}
+2017-09-05 09:52:40,312 p=31977 u=mlynn |  fatal: [ec2-52-90-53-234.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "unsupported parameter for module: remote_user"}
+2017-09-05 09:52:40,315 p=31977 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 09:52:40,315 p=31977 u=mlynn |  ec2-34-229-177-112.compute-1.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1   
+2017-09-05 09:52:40,315 p=31977 u=mlynn |  ec2-52-73-134-204.compute-1.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1   
+2017-09-05 09:52:40,315 p=31977 u=mlynn |  ec2-52-90-53-234.compute-1.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1   
+2017-09-05 09:53:01,752 p=32037 u=mlynn |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 7, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+(specified line no longer in file, maybe it changed?)
+2017-09-05 09:53:16,995 p=32050 u=mlynn |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 7, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+(specified line no longer in file, maybe it changed?)
+2017-09-05 09:54:58,890 p=32141 u=mlynn |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 5, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - name: test connection
+    ^ here
+
+
+The error appears to have been in '/Users/mlynn/gdrive/MongoDB/projects/ansible/ping.yml': line 5, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - name: test connection
+    ^ here
+
+2017-09-05 09:55:03,766 p=32149 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 09:55:03,787 p=32149 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 09:55:04,841 p=32149 u=mlynn |  ok: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 09:55:04,843 p=32149 u=mlynn |  ok: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 09:55:04,872 p=32149 u=mlynn |  ok: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 09:55:04,875 p=32149 u=mlynn |  TASK [ping] ********************************************************************
+2017-09-05 09:55:05,406 p=32149 u=mlynn |  ok: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 09:55:05,441 p=32149 u=mlynn |  ok: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 09:55:05,446 p=32149 u=mlynn |  ok: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 09:55:05,449 p=32149 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 09:55:05,449 p=32149 u=mlynn |  ec2-34-229-177-112.compute-1.amazonaws.com : ok=2    changed=0    unreachable=0    failed=0   
+2017-09-05 09:55:05,449 p=32149 u=mlynn |  ec2-52-73-134-204.compute-1.amazonaws.com : ok=2    changed=0    unreachable=0    failed=0   
+2017-09-05 09:55:05,450 p=32149 u=mlynn |  ec2-52-90-53-234.compute-1.amazonaws.com : ok=2    changed=0    unreachable=0    failed=0   
+2017-09-05 10:27:43,634 p=33605 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 10:27:43,675 p=33605 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 10:27:44,780 p=33605 u=mlynn |  ok: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 10:27:44,782 p=33605 u=mlynn |  ok: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 10:27:44,807 p=33605 u=mlynn |  ok: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 10:27:44,813 p=33605 u=mlynn |  TASK [template] ****************************************************************
+2017-09-05 10:27:46,089 p=33605 u=mlynn |  changed: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 10:27:46,093 p=33605 u=mlynn |  changed: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 10:27:46,093 p=33605 u=mlynn |  changed: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 10:27:46,096 p=33605 u=mlynn |  TASK [yum] *********************************************************************
+2017-09-05 10:27:47,520 p=33605 u=mlynn |  fatal: [ec2-34-229-177-112.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "https://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\nTrying other mirror.\nTo address this issue please refer to the below knowledge base article \n\nhttps://access.redhat.com/articles/1320623\n\nIf above article doesn't help to resolve this issue please open a ticket with Red Hat Support.\n\n\n\n One of the configured repositories failed (MongoDB Enterprise Repository),\n and yum doesn't have enough cached data to continue. At this point the only\n safe thing yum can do is fail. There are a few ways to work \"fix\" this:\n\n     1. Contact the upstream for the repository and get them to fix the problem.\n\n     2. Reconfigure the baseurl/etc. for the repository, to point to a working\n        upstream. This is most often useful if you are using a newer\n        distribution release than is supported by the repository (and the\n        packages for the previous distribution release still work).\n\n     3. Disable the repository, so yum won't use it by default. Yum will then\n        just ignore the repository until you permanently enable it again or use\n        --enablerepo for temporary usage:\n\n            yum-config-manager --disable mongodb-enterprise\n\n     4. Configure the failing repository to be skipped, if it is unavailable.\n        Note that yum will try to contact the repo. when it runs most commands,\n        so will have to try and fail each time (and thus. yum will be be much\n        slower). If it is a very temporary problem though, this is often a nice\n        compromise:\n\n            yum-config-manager --save --setopt=mongodb-enterprise.skip_if_unavailable=true\n\nfailure: repodata/repomd.xml from mongodb-enterprise: [Errno 256] No more mirrors to try.\nhttps://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\n", "rc": 1, "results": []}
+2017-09-05 10:27:47,521 p=33605 u=mlynn |  fatal: [ec2-52-73-134-204.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "https://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\nTrying other mirror.\nTo address this issue please refer to the below knowledge base article \n\nhttps://access.redhat.com/articles/1320623\n\nIf above article doesn't help to resolve this issue please open a ticket with Red Hat Support.\n\n\n\n One of the configured repositories failed (MongoDB Enterprise Repository),\n and yum doesn't have enough cached data to continue. At this point the only\n safe thing yum can do is fail. There are a few ways to work \"fix\" this:\n\n     1. Contact the upstream for the repository and get them to fix the problem.\n\n     2. Reconfigure the baseurl/etc. for the repository, to point to a working\n        upstream. This is most often useful if you are using a newer\n        distribution release than is supported by the repository (and the\n        packages for the previous distribution release still work).\n\n     3. Disable the repository, so yum won't use it by default. Yum will then\n        just ignore the repository until you permanently enable it again or use\n        --enablerepo for temporary usage:\n\n            yum-config-manager --disable mongodb-enterprise\n\n     4. Configure the failing repository to be skipped, if it is unavailable.\n        Note that yum will try to contact the repo. when it runs most commands,\n        so will have to try and fail each time (and thus. yum will be be much\n        slower). If it is a very temporary problem though, this is often a nice\n        compromise:\n\n            yum-config-manager --save --setopt=mongodb-enterprise.skip_if_unavailable=true\n\nfailure: repodata/repomd.xml from mongodb-enterprise: [Errno 256] No more mirrors to try.\nhttps://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\n", "rc": 1, "results": []}
+2017-09-05 10:27:48,526 p=33605 u=mlynn |  fatal: [ec2-52-90-53-234.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "https://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\nTrying other mirror.\nTo address this issue please refer to the below knowledge base article \n\nhttps://access.redhat.com/articles/1320623\n\nIf above article doesn't help to resolve this issue please open a ticket with Red Hat Support.\n\n\n\n One of the configured repositories failed (MongoDB Enterprise Repository),\n and yum doesn't have enough cached data to continue. At this point the only\n safe thing yum can do is fail. There are a few ways to work \"fix\" this:\n\n     1. Contact the upstream for the repository and get them to fix the problem.\n\n     2. Reconfigure the baseurl/etc. for the repository, to point to a working\n        upstream. This is most often useful if you are using a newer\n        distribution release than is supported by the repository (and the\n        packages for the previous distribution release still work).\n\n     3. Disable the repository, so yum won't use it by default. Yum will then\n        just ignore the repository until you permanently enable it again or use\n        --enablerepo for temporary usage:\n\n            yum-config-manager --disable mongodb-enterprise\n\n     4. Configure the failing repository to be skipped, if it is unavailable.\n        Note that yum will try to contact the repo. when it runs most commands,\n        so will have to try and fail each time (and thus. yum will be be much\n        slower). If it is a very temporary problem though, this is often a nice\n        compromise:\n\n            yum-config-manager --save --setopt=mongodb-enterprise.skip_if_unavailable=true\n\nfailure: repodata/repomd.xml from mongodb-enterprise: [Errno 256] No more mirrors to try.\nhttps://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\n", "rc": 1, "results": []}
+2017-09-05 10:27:48,528 p=33605 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 10:27:48,528 p=33605 u=mlynn |  ec2-34-229-177-112.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=1   
+2017-09-05 10:27:48,528 p=33605 u=mlynn |  ec2-52-73-134-204.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=1   
+2017-09-05 10:27:48,528 p=33605 u=mlynn |  ec2-52-90-53-234.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=1   
+2017-09-05 10:51:30,997 p=33874 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 10:51:31,039 p=33874 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 10:51:32,011 p=33874 u=mlynn |  ok: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 10:51:32,138 p=33874 u=mlynn |  ok: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 10:51:32,170 p=33874 u=mlynn |  ok: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 10:51:32,176 p=33874 u=mlynn |  TASK [template] ****************************************************************
+2017-09-05 10:51:33,464 p=33874 u=mlynn |  changed: [ec2-52-73-134-204.compute-1.amazonaws.com]
+2017-09-05 10:51:33,467 p=33874 u=mlynn |  changed: [ec2-34-229-177-112.compute-1.amazonaws.com]
+2017-09-05 10:51:33,498 p=33874 u=mlynn |  changed: [ec2-52-90-53-234.compute-1.amazonaws.com]
+2017-09-05 10:51:33,502 p=33874 u=mlynn |  TASK [yum] *********************************************************************
+2017-09-05 10:51:34,725 p=33874 u=mlynn |  fatal: [ec2-52-90-53-234.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "https://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\nTrying other mirror.\nTo address this issue please refer to the below knowledge base article \n\nhttps://access.redhat.com/articles/1320623\n\nIf above article doesn't help to resolve this issue please open a ticket with Red Hat Support.\n\n\n\n One of the configured repositories failed (MongoDB Enterprise Repository),\n and yum doesn't have enough cached data to continue. At this point the only\n safe thing yum can do is fail. There are a few ways to work \"fix\" this:\n\n     1. Contact the upstream for the repository and get them to fix the problem.\n\n     2. Reconfigure the baseurl/etc. for the repository, to point to a working\n        upstream. This is most often useful if you are using a newer\n        distribution release than is supported by the repository (and the\n        packages for the previous distribution release still work).\n\n     3. Disable the repository, so yum won't use it by default. Yum will then\n        just ignore the repository until you permanently enable it again or use\n        --enablerepo for temporary usage:\n\n            yum-config-manager --disable mongodb-enterprise\n\n     4. Configure the failing repository to be skipped, if it is unavailable.\n        Note that yum will try to contact the repo. when it runs most commands,\n        so will have to try and fail each time (and thus. yum will be be much\n        slower). If it is a very temporary problem though, this is often a nice\n        compromise:\n\n            yum-config-manager --save --setopt=mongodb-enterprise.skip_if_unavailable=true\n\nfailure: repodata/repomd.xml from mongodb-enterprise: [Errno 256] No more mirrors to try.\nhttps://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\n", "rc": 1, "results": []}
+2017-09-05 10:51:34,764 p=33874 u=mlynn |  fatal: [ec2-52-73-134-204.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "https://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\nTrying other mirror.\nTo address this issue please refer to the below knowledge base article \n\nhttps://access.redhat.com/articles/1320623\n\nIf above article doesn't help to resolve this issue please open a ticket with Red Hat Support.\n\n\n\n One of the configured repositories failed (MongoDB Enterprise Repository),\n and yum doesn't have enough cached data to continue. At this point the only\n safe thing yum can do is fail. There are a few ways to work \"fix\" this:\n\n     1. Contact the upstream for the repository and get them to fix the problem.\n\n     2. Reconfigure the baseurl/etc. for the repository, to point to a working\n        upstream. This is most often useful if you are using a newer\n        distribution release than is supported by the repository (and the\n        packages for the previous distribution release still work).\n\n     3. Disable the repository, so yum won't use it by default. Yum will then\n        just ignore the repository until you permanently enable it again or use\n        --enablerepo for temporary usage:\n\n            yum-config-manager --disable mongodb-enterprise\n\n     4. Configure the failing repository to be skipped, if it is unavailable.\n        Note that yum will try to contact the repo. when it runs most commands,\n        so will have to try and fail each time (and thus. yum will be be much\n        slower). If it is a very temporary problem though, this is often a nice\n        compromise:\n\n            yum-config-manager --save --setopt=mongodb-enterprise.skip_if_unavailable=true\n\nfailure: repodata/repomd.xml from mongodb-enterprise: [Errno 256] No more mirrors to try.\nhttps://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\n", "rc": 1, "results": []}
+2017-09-05 10:51:35,510 p=33874 u=mlynn |  fatal: [ec2-34-229-177-112.compute-1.amazonaws.com]: FAILED! => {"changed": false, "failed": true, "msg": "https://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\nTrying other mirror.\nTo address this issue please refer to the below knowledge base article \n\nhttps://access.redhat.com/articles/1320623\n\nIf above article doesn't help to resolve this issue please open a ticket with Red Hat Support.\n\n\n\n One of the configured repositories failed (MongoDB Enterprise Repository),\n and yum doesn't have enough cached data to continue. At this point the only\n safe thing yum can do is fail. There are a few ways to work \"fix\" this:\n\n     1. Contact the upstream for the repository and get them to fix the problem.\n\n     2. Reconfigure the baseurl/etc. for the repository, to point to a working\n        upstream. This is most often useful if you are using a newer\n        distribution release than is supported by the repository (and the\n        packages for the previous distribution release still work).\n\n     3. Disable the repository, so yum won't use it by default. Yum will then\n        just ignore the repository until you permanently enable it again or use\n        --enablerepo for temporary usage:\n\n            yum-config-manager --disable mongodb-enterprise\n\n     4. Configure the failing repository to be skipped, if it is unavailable.\n        Note that yum will try to contact the repo. when it runs most commands,\n        so will have to try and fail each time (and thus. yum will be be much\n        slower). If it is a very temporary problem though, this is often a nice\n        compromise:\n\n            yum-config-manager --save --setopt=mongodb-enterprise.skip_if_unavailable=true\n\nfailure: repodata/repomd.xml from mongodb-enterprise: [Errno 256] No more mirrors to try.\nhttps://repo.mongodb.com/yum/redhat/latest/mongodb-enterprise/3.4/x86_64/repodata/repomd.xml: [Errno 14] HTTPS Error 404 - Not Found\n", "rc": 1, "results": []}
+2017-09-05 10:51:35,512 p=33874 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 10:51:35,513 p=33874 u=mlynn |  ec2-34-229-177-112.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=1   
+2017-09-05 10:51:35,513 p=33874 u=mlynn |  ec2-52-73-134-204.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=1   
+2017-09-05 10:51:35,513 p=33874 u=mlynn |  ec2-52-90-53-234.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=1   
+2017-09-05 10:58:05,502 p=34362 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 10:58:05,544 p=34362 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 10:58:06,588 p=34362 u=mlynn |  ok: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:58:06,646 p=34362 u=mlynn |  ok: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:58:06,777 p=34362 u=mlynn |  ok: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:58:06,784 p=34362 u=mlynn |  TASK [template] ****************************************************************
+2017-09-05 10:58:08,010 p=34362 u=mlynn |  changed: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:58:08,018 p=34362 u=mlynn |  changed: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:58:08,059 p=34362 u=mlynn |  changed: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:58:08,063 p=34362 u=mlynn |  TASK [yum] *********************************************************************
+2017-09-05 10:58:55,164 p=34362 u=mlynn |  changed: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:58:55,726 p=34362 u=mlynn |  changed: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:58:59,097 p=34362 u=mlynn |  changed: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:58:59,100 p=34362 u=mlynn |  TASK [yum] *********************************************************************
+2017-09-05 10:59:09,639 p=34362 u=mlynn |  changed: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:59:09,823 p=34362 u=mlynn |  changed: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:59:10,546 p=34362 u=mlynn |  changed: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:59:10,550 p=34362 u=mlynn |  TASK [yum] *********************************************************************
+2017-09-05 10:59:12,185 p=34362 u=mlynn |  ok: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:59:12,198 p=34362 u=mlynn |  ok: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:59:14,163 p=34362 u=mlynn |  ok: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:59:14,166 p=34362 u=mlynn |  TASK [yum] *********************************************************************
+2017-09-05 10:59:15,794 p=34362 u=mlynn |  ok: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:59:15,845 p=34362 u=mlynn |  ok: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:59:15,937 p=34362 u=mlynn |  ok: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:59:15,941 p=34362 u=mlynn |  TASK [file] ********************************************************************
+2017-09-05 10:59:16,530 p=34362 u=mlynn |  changed: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 10:59:16,540 p=34362 u=mlynn |  changed: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 10:59:16,577 p=34362 u=mlynn |  changed: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 10:59:16,582 p=34362 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 10:59:16,582 p=34362 u=mlynn |  ec2-52-201-226-157.compute-1.amazonaws.com : ok=7    changed=4    unreachable=0    failed=0   
+2017-09-05 10:59:16,582 p=34362 u=mlynn |  ec2-52-91-206-78.compute-1.amazonaws.com : ok=7    changed=4    unreachable=0    failed=0   
+2017-09-05 10:59:16,582 p=34362 u=mlynn |  ec2-54-175-130-49.compute-1.amazonaws.com : ok=7    changed=4    unreachable=0    failed=0   
+2017-09-05 11:15:35,386 p=35251 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 11:15:35,432 p=35251 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 11:15:36,574 p=35251 u=mlynn |  ok: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 11:15:36,574 p=35251 u=mlynn |  ok: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 11:15:36,597 p=35251 u=mlynn |  ok: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 11:15:36,601 p=35251 u=mlynn |  TASK [Launch Mongods for App] **************************************************
+2017-09-05 11:15:37,182 p=35251 u=mlynn |  fatal: [ec2-54-175-130-49.compute-1.amazonaws.com]: FAILED! => {"changed": true, "cmd": "sudo -u mongod mongod --port 27017 --dbpath /data/appdb --logpath /data/appdb/mongodb.log --fork", "delta": "0:00:00.021481", "end": "2017-09-05 15:15:37.436397", "failed": true, "rc": 1, "start": "2017-09-05 15:15:37.414916", "stderr": "", "stdout": "about to fork child process, waiting until server is ready for connections.\nforked process: 9468\nERROR: child process failed, exited with error number 1", "stdout_lines": ["about to fork child process, waiting until server is ready for connections.", "forked process: 9468", "ERROR: child process failed, exited with error number 1"], "warnings": ["Consider using 'become', 'become_method', and 'become_user' rather than running sudo"]}
+2017-09-05 11:15:37,199 p=35251 u=mlynn |  fatal: [ec2-52-91-206-78.compute-1.amazonaws.com]: FAILED! => {"changed": true, "cmd": "sudo -u mongod mongod --port 27017 --dbpath /data/appdb --logpath /data/appdb/mongodb.log --fork", "delta": "0:00:00.020873", "end": "2017-09-05 15:15:37.444152", "failed": true, "rc": 1, "start": "2017-09-05 15:15:37.423279", "stderr": "", "stdout": "about to fork child process, waiting until server is ready for connections.\nforked process: 9394\nERROR: child process failed, exited with error number 1", "stdout_lines": ["about to fork child process, waiting until server is ready for connections.", "forked process: 9394", "ERROR: child process failed, exited with error number 1"], "warnings": ["Consider using 'become', 'become_method', and 'become_user' rather than running sudo"]}
+2017-09-05 11:15:37,208 p=35251 u=mlynn |  fatal: [ec2-52-201-226-157.compute-1.amazonaws.com]: FAILED! => {"changed": true, "cmd": "sudo -u mongod mongod --port 27017 --dbpath /data/appdb --logpath /data/appdb/mongodb.log --fork", "delta": "0:00:00.020605", "end": "2017-09-05 15:15:37.467726", "failed": true, "rc": 1, "start": "2017-09-05 15:15:37.447121", "stderr": "", "stdout": "about to fork child process, waiting until server is ready for connections.\nforked process: 9415\nERROR: child process failed, exited with error number 1", "stdout_lines": ["about to fork child process, waiting until server is ready for connections.", "forked process: 9415", "ERROR: child process failed, exited with error number 1"], "warnings": ["Consider using 'become', 'become_method', and 'become_user' rather than running sudo"]}
+2017-09-05 11:15:37,211 p=35251 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 11:15:37,211 p=35251 u=mlynn |  ec2-52-201-226-157.compute-1.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1   
+2017-09-05 11:15:37,211 p=35251 u=mlynn |  ec2-52-91-206-78.compute-1.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1   
+2017-09-05 11:15:37,211 p=35251 u=mlynn |  ec2-54-175-130-49.compute-1.amazonaws.com : ok=1    changed=0    unreachable=0    failed=1   
+2017-09-05 11:18:37,078 p=35427 u=mlynn |  PLAY [ReplicaSet] **************************************************************
+2017-09-05 11:18:37,118 p=35427 u=mlynn |  TASK [setup] *******************************************************************
+2017-09-05 11:18:38,804 p=35427 u=mlynn |  ok: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 11:18:38,876 p=35427 u=mlynn |  ok: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 11:18:39,023 p=35427 u=mlynn |  ok: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 11:18:39,027 p=35427 u=mlynn |  TASK [Launch Mongods for App] **************************************************
+2017-09-05 11:18:39,838 p=35427 u=mlynn |  changed: [ec2-52-201-226-157.compute-1.amazonaws.com]
+2017-09-05 11:18:39,839 p=35427 u=mlynn |   [WARNING]: Consider using 'become', 'become_method', and 'become_user' rather than running sudo
+
+2017-09-05 11:18:39,868 p=35427 u=mlynn |  changed: [ec2-52-91-206-78.compute-1.amazonaws.com]
+2017-09-05 11:18:39,895 p=35427 u=mlynn |  changed: [ec2-54-175-130-49.compute-1.amazonaws.com]
+2017-09-05 11:18:39,898 p=35427 u=mlynn |  PLAY RECAP *********************************************************************
+2017-09-05 11:18:39,898 p=35427 u=mlynn |  ec2-52-201-226-157.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=0   
+2017-09-05 11:18:39,898 p=35427 u=mlynn |  ec2-52-91-206-78.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=0   
+2017-09-05 11:18:39,898 p=35427 u=mlynn |  ec2-54-175-130-49.compute-1.amazonaws.com : ok=2    changed=1    unreachable=0    failed=0   

@@ -1,0 +1,7 @@
+---
+- hosts: ReplicaSet
+  remote_user: ec2-user
+  become: yes
+  tasks:
+   - name: Launch Mongods for App
+     shell: sudo -u mongod mongod --port 27017 --dbpath /data --logpath /data/mongodb.log --fork

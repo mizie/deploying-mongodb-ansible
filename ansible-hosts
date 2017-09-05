@@ -1,0 +1,4 @@
+[ReplicaSet]
+ec2-52-201-226-157.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-52-91-206-78.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-54-175-130-49.compute-1.amazonaws.com ansible_user=ec2-user
